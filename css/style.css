@@ -24,7 +24,7 @@ float: right;
 }
 .nav:hover,.nav:active
 {
-background-color:#7A991A;
+background-color:#4d6690;
 }
 .mvp{
 color:  #ffffff;
@@ -33,4 +33,10 @@ width: 300px;
 text-align: center;
 line-height: 50px;
 float: left;
+}
+.iimag{
+    float: right;
+}
+.fform{
+
 }
