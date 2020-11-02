@@ -1,12 +1,10 @@
-
-
 div {
-    background-color: #00a7d1;
-    width: 100%;
+    /*background-color: #00a7d1;*/
+    /*width: 100%;*/
     /*border: 25px solid green;*/
-    height: 50px;
-    float: right;
-    display: block;
+    /*height: 50px;*/
+    /*float: right;*/
+    /*display: block;*/
 }
 
 #top-menu a{
@@ -16,6 +14,7 @@ div {
 	text-decoration: none;
 }
 .nav{
+background-color: #00a7d1;
 height: 50px;
 width: 150px;
 text-align: center;
@@ -27,20 +26,73 @@ float: right;
 background-color:#4d6690;
 }
 .mvp{
+background-color: #00a7d1;
 color:  #ffffff;
-height: 100px;
+height: 50px;
 width: 300px;
 text-align: center;
 line-height: 50px;
 float: left;
 }
-.iimag{
-    float: right;
-}
+
 .fform{
+
 height: 50px;
-width: 150px;
-text-align: center;
+width: 500px;
+/*text-align: center;*/
 line-height: 50px;
-float: right;
+float:left;
+position: absolute;
+left: 50%;
+top: 50%;
+margin-left: -300px;
+margin-top: -200px;
+}
+
+.fform_bottum{
+    background-color: #00a7d1;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    /*float: right;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: 550px;
+}
+.fform_bottum:hover,.fform_bottum:active
+{
+background-color:#4d6690;
+}
+
+.text{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+     margin-left: -400px;
+    margin-top: 200px;
+}
+.iimg{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -200px;
+}
+.tital{
+    width: 600px;
+    height: 400px;
+    size: 1000px;
+    color: #00a7d1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -300px;
 }
