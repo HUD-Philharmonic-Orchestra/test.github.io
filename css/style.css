@@ -96,3 +96,27 @@ background-color:#4d6690;
     margin-left: -350px;
     margin-top: -300px;
 }
+.connet_fform_bottum{
+    background-color: #00a7d1;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    /*float: right;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: 350px;
+}
+.connet_fform_bottum:hover,.fform_bottum:active
+{
+background-color:#4d6690;
+}
+.massage_ways{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: 300px;
+}
