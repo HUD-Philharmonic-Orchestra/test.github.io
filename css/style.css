@@ -78,9 +78,9 @@ background-color:#4d6690;
 }
 .iimg{
     width: 600px;
-    height: 400px;
-    position: absolute;
+    height: 400px; absolute;
     left: 50%;
+    position:
     top: 50%;
     margin-left: -400px;
     margin-top: -200px;
