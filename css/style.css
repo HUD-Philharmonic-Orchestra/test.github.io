@@ -25,6 +25,7 @@ float: right;
 {
 background-color:#4d6690;
 }
+
 .mvp{
 background-color: #00a7d1;
 color:  #ffffff;
@@ -78,9 +79,9 @@ background-color:#4d6690;
 }
 .iimg{
     width: 600px;
-    height: 400px; absolute;
+    height: 400px; 
     left: 50%;
-    position:
+    position:absolute;
     top: 50%;
     margin-left: -400px;
     margin-top: -200px;
