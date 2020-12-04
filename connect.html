@@ -1,67 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>联系我们</title>
-	<link rel="stylesheet" type="text/css" href=".\css\style.css">
-	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>爱E乐团</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bl-css.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-	
-	<div id="top-menu">
-		<div class="mvp">爱E乐团</div>
-		<a href=".\index.html">
-			<div class="nav">首页</div>
-		</a>
-		<a href="#">
-			<div class="nav">团内事务</div>
-		</a>
-		<a href="#">
-			<div class="nav">小常识</div>
-		</a>
-		<a href="#">
-			<div class="nav">日常剪影</div>
-		</a>
-		<a href="#">
-			<div class="nav">爱E足迹</div>
-		</a>
-		<a href=".\biaodan.html">
-			<div class="nav">招新入口</div>
-		</a>
-		<a href=".\connect.html">
-			<div class="nav">联系我们</div>
-		</a>
-	</div>
-	<div class="fform">
-	    <form name="Form" action="#" onsubmit="return judge()" method="post">
-            姓名:<input type="text" name="Name" value="">
-            <br>
-            手机:<input type="text" name="telnum" value="">
-            <br>
-            QQ：<input type="text" name="qqnum" value="">
-            <br>
-            详情：<textarea rows="10" cols="30"></textarea>
-            <br>
-            附件：
-  		    <input type="file" name="file">
-            <input type="submit" value="提交" class="connet_fform_bottum">
-        </form>
+    <div class="bl-header container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bl-nav">
+                <a class="nav-prand" href="bl-first-index.html">爱E乐团</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a href="index.html">首页 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="bl-about.html"">小常识</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="pictures.html">日常剪影</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="bl-about2.html">招新入口</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="shiwu.html">团内事务</a>
+                            </li>
+                            <li class="nav-item  active">
+                                 <a href="connect.html">联系我们</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
-    <br>
-    <div class="massage_ways">
-    	如有更多问题欢迎联系我们：
-    	<table border="1">
-    		<tr>
-    			<td>团长QQ</td>
-    			<td>1298776279</td>
-    		</tr>
-    		<tr>
-    			<td>微博</td>
-    			<td>杭州电子科技大学爱E乐团</td>
-    		</tr>
-    	</table>
+<div class="container bl-container">
+    <h2 class="bl-title-center">加入我们</h2>
+    <div class="bl-artical">
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">姓名</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">手机</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">QQ</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="请输入">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">详情</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="请输入">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">附件上传</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">详情</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="请输入">
+              </div>
+          
+            <button type="submit" class="btn btn-primary">发送</button>
+          </form>
+        </div>
+</div>
+<div class="bl-footer container-fluid">
+    <div class="container">
+        <ul class="bl-footer-list">
+            <li class="bl-footer-item">
+                <a href="#">加入我们</a>
+            </li>
+            <li class="bl-footer-item">
+                <a href="#">地址：杭州电子科技大学艺术楼</a>
+            </li>
+            <li class="bl-footer-item">
+                <a href="#">联系方式QQ：1417662982</a>
+            </li>
+        </ul>
+        <div class="copyright">copyright @ 杭州电子科技大学大学生艺术团爱E乐团</div>
     </div>
+</div>
+<script src="jquery/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
