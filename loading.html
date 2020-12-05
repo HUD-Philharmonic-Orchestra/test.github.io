@@ -20,6 +20,7 @@
     </div>
     <div class="container bl-card">
         <div class="jpress-img2" data-aos="fade-up"><img src="img/bg.jpg" />
+        <h3 id="demo"></h3>
         <h3>请登录</h3>
         <form name="Form" action="#" onsubmit="return judge()" method="post">
             用户名:<input type="text" name="Name" value="">
@@ -65,6 +66,14 @@
            
          }
          function Reset(){location.reload()}
+</script>
+<script>
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer(){
+    var d=new Date();
+    var t=d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML=t;
+}
 </script>
 </body>
 </html>
