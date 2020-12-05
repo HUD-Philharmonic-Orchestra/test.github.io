@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!--这里定义倒计时开始数值-->
+注册成功！倒计时结束后即将跳转
+<span id="totalSecond">5</span>
+<a href="hello.html">若无响应请点击这里</a>
+ <!--定义js变量及方法-->
+
+<script language="javascript" type="text/javascript">
+var second = document.getElementById('totalSecond').textContent;
+
+if (navigator.appName.indexOf("Explorer") > -1)
+{
+second = document.getElementById('totalSecond').innerText;
+} else
+{
+second = document.getElementById('totalSecond').textContent;
+}
+
+
+setInterval("redirect()", 1000);
+function redirect()
+{
+if (second < 0)
+{
+
+ <!--定义倒计时后跳转页面-->
+location.href = 'index.html';
+} else
+{
+if (navigator.appName.indexOf("Explorer") > -1)
+{
+document.getElementById('totalSecond').innerText = second--;
+} else
+{
+document.getElementById('totalSecond').textContent = second--;
+}
+}
+}
+</script>
+</body>
+</html>
