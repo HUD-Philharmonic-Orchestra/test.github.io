@@ -27,7 +27,8 @@
             <br>
             密&nbsp;&nbsp;&nbsp;&nbsp;码:<input type="text" name="Keynum" value="">
             <br>
-            <input type="submit" value="登录" class="fform_bottum" herf="index.html">
+            <input type="submit" value="登录" class="fform_bottum" herf="./index.html">
+            <input type="submit" value="注册" class="fform_bottum" onclick="setCookie(Form.Name,Form.Keynum,30)">
         </form>
     </div>
 
@@ -73,6 +74,15 @@ function myTimer(){
     var d=new Date();
     var t=d.toLocaleTimeString();
     document.getElementById("demo").innerHTML=t;
+}
+</script>
+<script>
+    function setCookie(cname,cvalue,exdays){
+    var d = new Date();
+    d.setTime(d.getTime()+(exdays*24*60*60*1000));
+    var expires = "expires="+d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+    document.write("注册成功");
 }
 </script>
 </body>
