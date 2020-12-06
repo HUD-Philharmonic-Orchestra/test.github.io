@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>爱E乐团</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bl-css.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="aos/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bl-header container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bl-nav">
+                <a class="nav-prand" href="bl-first-index.html">爱E乐团</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="index.html">首页 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="xiaochangshi.html">小常识</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pictures.html">日常剪影</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="zhaoxin.html">招新入口</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shiwu.html">团内事务</a>
+                        </li>
+                        <li class="nav-item">
+                             <a href="connect.html">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <table id="myTable" border="1">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>学号</th>
+                    <th>学院</th>
+                    <th>职位</th>
+                    <th>政治面貌</th>
+                    <th>生日</th>
+                    <th>寝室号</th>
+                    <th>手机</th>
+                    <th>邮箱</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>俞智源</td>
+                    <td>19051730</td>
+                    <td>计算机学院</td>
+                    <td>队长</td>
+                    <td>共青团员</td>
+                    <td>2001-02-11</td>
+                    <td>12-南-503</td>
+                    <td>13606717643</td>
+                    <td>1298776279@qq.com</td>
+                </tr>    
+            </tbody>
+        </table>
+        <br>
+
+        <a href="javascript:void(0);" onclick="insRow()" id="add">增加一行</a>
+
+
+    </div>
+
+    <div class="bl-footer container-fluid">
+        <div class="container">
+            <ul class="bl-footer-list">
+                <li class="bl-footer-item">
+                    <a href="#">加入我们</a>
+                </li>
+                <li class="bl-footer-item">
+                    <a href="#">地址：杭州电子科技大学艺术楼</a>
+                </li>
+                <li class="bl-footer-item">
+                    <a href="#">联系方式QQ：1298776279</a>
+                </li>
+            </ul>
+            <div class="copyright">新浪微博 @ 杭州电子科技大学大学生艺术团爱E乐团</div>
+        </div>
+    </div>
+<script src="jquery/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="aos/dist/aos.js"></script>
+<script>
+    AOS. init();
+</script >
+<script type="text/javascript">
+
+function insRow()
+
+  {
+
+  var x=document.getElementById('myTable').insertRow(-1)
+
+  var a=x.insertCell(0)
+  var b=x.insertCell(1)
+  var c=x.insertCell(2)
+  var d=x.insertCell(3)
+  var e=x.insertCell(4)
+  var f=x.insertCell(5)
+  var g=x.insertCell(6)
+  var h=x.insertCell(7)
+  var i=x.insertCell(8)
+  var j=x.insertCell(9)
+
+  a.innerHTML="编号"
+  b.innerHTML="姓名"
+  c.innerHTML="学号"
+  d.innerHTML="学院"
+  e.innerHTML="职位"
+  f.innerHTML="政治面貌"
+  g.innerHTML="生日"
+  h.innerHTML="寝室号"
+  i.innerHTML="手机"
+  j.innerHTML="邮箱"
+  }
+window.onload=function(){
+
+    var oTable = document.getElementById("mytable");
+
+    //修改单元格内容
+
+    oTable.rows[3].cells[4].innerHTML = "更改的内容";
+
+}
+
+</script>
+</body>
+</html>
