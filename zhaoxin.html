@@ -19,26 +19,24 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item ">
-                                <a href="index.html">首页 <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="bl-about.html"">小常识</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a href="pictures.html">日常剪影</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a href="bl-about2.html">招新入口</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="shiwu.html">团内事务</a>
-                            </li>
-                            <li class="nav-item">
-                                 <a href="connect.html">联系我们</a>
-                            </li>
-                        </ul>
+                        <li class="nav-item">
+                            <a href="index.html">首页 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="xiaochangshi.html">小常识</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pictures.html">日常剪影</a>
+                        </li>
+                        <li class="nav-item  active">
+                            <a href="zhaoxin.html">招新入口</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shiwu.html">团内事务</a>
+                        </li>
+                        <li class="nav-item">
+                             <a href="connect.html">联系我们</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -47,15 +45,15 @@
 <div class="container bl-container">
     <h2 class="bl-title-center">加入我们</h2>
     <div class="bl-artical">
-        <form>
+        <form  name="Form" action="#" onsubmit="return judge()" method="post">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">姓名</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <input type=" " class="form-control" id="inputName" name="Name">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">电话</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                <input type=" " class="form-control" id="inputPassword4" name="telnum">
               </div>
             </div>
             <div class="form-group">
@@ -75,8 +73,9 @@
                 <label for="inputState">乐器</label>
                 <select id="inputState" class="form-control">
                   <option selected>钢琴</option>
-                  <option selected>口琴</option>
-                  <option selected>吉他</option>
+                  <option selected>弦乐</option>
+                  <option selected>管乐</option>
+                  <option selected>打击乐</option>
                 </select>
               </div>
               <div class="form-group col-md-6">
@@ -108,10 +107,23 @@
                 <a href="#">联系方式QQ：1417662982</a>
             </li>
         </ul>
-        <div class="copyright">copyright @ 杭州电子科技大学大学生艺术团爱E乐团</div>
+        <div class="copyright">新浪微博 @ 杭州电子科技大学大学生艺术团爱E乐团</div>
     </div>
 </div>
 <script src="jquery/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+         function judge(){
+
+           var na=document.forms["Form"]["Name"].value;
+           var tn=document.forms["Form"]["telnum"].value;
+           if(na==""||tn=="")
+            {
+                alert("有必填项目未填");
+                 return false;
+            }
+         }
+         function Reset(){location.reload()}
+    </script>
 </body>
 </html>
