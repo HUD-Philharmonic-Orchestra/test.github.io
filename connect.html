@@ -53,7 +53,7 @@
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">手机</label>
-                <input type="telnum" class="form-control" id="inputPassword4">
+                <input type="Telnum" class="form-control" id="inputPassword4">
               </div>
             </div>
             <div class="form-group">
@@ -95,5 +95,19 @@
 </div>
 <script src="jquery/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+         function judge(){
+
+           var na=document.forms["Form"]["Name"].value;
+           var tn=document.forms["Form"]["Telnum"].value;
+           if(na==""||tn=="")
+            {
+                alert("有必填项目未填");
+                 return false;
+            }
+           
+         }
+         function Reset(){location.reload()}
+</script>
 </body>
 </html>
