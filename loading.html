@@ -10,7 +10,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="aos/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body onload="checkCookie()">
 
     <div class="bl-bgclor container-fluid">
         <div class="bl-banner container">
@@ -22,12 +22,12 @@
         <div class="jpress-img2" data-aos="fade-up"><img src="img/bg.jpg" />
         <h3 id="demo"></h3>
         <h3>请登录</h3>
-        <form name="Form" action="#" onsubmit="return judge()" method="get">
+        <form name="Form" action="#" onsubmit="return judge()" method="post">
             用户名:<input type="text" name="Name" value="">
             <br>
             密&nbsp;&nbsp;&nbsp;&nbsp;码:<input type="text" name="Keynum" value="">
             <br>
-            <input type="submit" value="登录" class="btn btn-primary" onclick="checkCookie(Form.Name,Form.Keynum)">
+            <input type="submit" value="登录" class="btn btn-primary" onclick="saveCookie()">
             <input type="submit" value="注册" class="btn btn-primary" onclick="setCookie(Form.Name,Form.Keynum,30)">
         </form>
     </div>
@@ -76,8 +76,8 @@ function myTimer(){
     document.getElementById("demo").innerHTML=t;
 }
 </script>
-<script>
-           function setCookie(name, value, expiredays) {
+    <script>
+        function setCookie(name, value, expiredays) {
             var exdate = new Date();
             exdate.setDate(exdate.getDate() + expiredays);
             document.cookie = name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate
@@ -109,10 +109,20 @@ function myTimer(){
                 password.value = PValue;
             }
         }
+        function saveCookie() { //保存cookie
+            var UName = document.getElementById("userName");
+            var PName = document.getElementById("password");
+            if (UName.value == "") {
+                alert("请输入用户名！");
+            } else if (PName.value == "") {
+                alert("请输入密码！");
+            } else if (confirm("是否保存用户名密码？")) {
+                setCookie(UName.id, UName.value, 30);
+                setCookie(PName.id, PName.value, 30);
+                location.href="index.html"；
+            }
+        }
 
-        
-    </script>
-}
 </script>
 </body>
 </html>
