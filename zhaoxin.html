@@ -48,7 +48,7 @@
 <div class="container bl-container">
     <h2 class="bl-title-center">加入我们</h2>
     <div class="bl-artical">
-        <form  name="Form" action="#" onsubmit="return judge()" method="post">
+        <form  name="Form" action="#" onsubmit="return judge_zhaoxin()" method="post">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">姓名</label>
@@ -115,8 +115,8 @@
 </div>
 <script src="jquery/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-         function judge(){
+ <script type="text/javascript">
+         function judge_zhaoxin(){
 
            var na=document.forms["Form"]["Name"].value;
            var tn=document.forms["Form"]["telnum"].value;
@@ -127,6 +127,7 @@
             }
          }
          function Reset(){location.reload()}
-    </script>
+    </script> 
+    <script src="js/js1.js"></script>
 </body>
 </html>
