@@ -22,7 +22,7 @@
         <div class="jpress-img2" data-aos="fade-up"><img src="img/bg.jpg" />
         <h3 id="demo"></h3>
         <h3>请登录</h3>
-        <form name="Form" action="#" onsubmit="return judge()" method="get">
+        <form name="Form" action="#" onsubmit="return judge_loading()" method="get">
             用户名:<input type="text" name="Name" value="">
             <br>
             密&nbsp;&nbsp;&nbsp;&nbsp;码:<input type="text" name="Keynum" value="">
@@ -54,8 +54,9 @@
 <script>
     AOS. init();
 </script>
-<script type="text/javascript">
-         function judge(){
+<script src="js/js1/js"></script>
+<!-- <script type="text/javascript">
+         function judge_loading(){
 
            var na=document.forms["Form"]["Name"].value;
            var kn=document.forms["Form"]["Keynum"].value;
@@ -126,6 +127,6 @@ function myTimer(){
             location.repalce("index.html")；
         }
 
-</script>
+</script> -->
 </body>
 </html>
