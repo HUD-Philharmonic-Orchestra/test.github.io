@@ -107,6 +107,7 @@ function myTimer(){
             if (UValue != null && UValue != "" && PValue != null && PValue != "") {
                 userName.value = UValue;
                 password.value = PValue;
+                location.repalce("index.html")；
             }
         }
         function saveCookie() { //保存cookie
@@ -119,7 +120,7 @@ function myTimer(){
             } else if (confirm("是否保存用户名密码？")) {
                 setCookie(UName.id, UName.value, 30);
                 setCookie(PName.id, PName.value, 30);
-                location.href="index.html"；
+                location.repalce("index.html")；
             }
         }
 
